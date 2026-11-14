@@ -32,7 +32,8 @@ jobs:
 
       - name: Install dependencies
         # Instala desde el lock con hashes (versiones exactas y verificadas) y solo wheels
-        run: pip install --require-hashes --only-binary :all: -r requirements-dev.lock
+        run: |
+          pip install --require-hashes --only-binary :all: -r requirements-dev.lock
 
       - name: Run Black (Formatter)
         run: black app --check  # --check solo verifica, no modifica
