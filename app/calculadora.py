@@ -5,14 +5,18 @@
 # Ejemplo: "Ana María Pérez | Luis Andrés Gómez | Sara Restrepo Ríos"
 AUTOR = "Jose Manuel Carvajal | Mateo Montoya | Santiago Mesa"
 
+
 def sumar(a, b):
     return a + b
+
 
 def restar(a, b):
     return a - b
 
+
 def multiplicar(a, b):
     return a * b
+
 
 def dividir(a, b):
     if b == 0:
